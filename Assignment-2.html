@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Essentials Assignment-2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #d8da3d;
+        color: #80007e;
+        padding: 0 2rem;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 20% auto;
+      }
+      ul {
+        list-style: none;
+      }
+      .left-container {
+        margin: 4rem 0;
+        margin-right: 1rem;
+      }
+      .left-container li {
+        position: relative;
+        background-color: #fff;
+        color: #80007e;
+        padding: 7px 10px;
+        margin: 5px 0;
+      }
+      .left-container li span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 100%;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+      }
+      .right-container > * {
+        margin: 2rem 1rem;
+      }
+      .right-container p{
+          margin: 1rem 0;
+      }
+      .right-container h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        /* line-height: 0.2; */
+      }
+
+      .welcome-text {
+        padding-bottom: 3rem;
+        border-bottom: 1px dashed;
+        margin-bottom: 2rem;
+      }
+
+      .bordered-text {
+        max-width: 80%;
+      }
+      .bordered-text p:nth-child(1) {
+        border: 1px dashed black;
+        padding: 10px;
+      }
+      .bordered-text p:nth-child(2) {
+        border: 1px dashed #e60b0b;
+        padding: 10px;
+        text-align: right;
+      }
+      .bordered-text p:nth-child(3) {
+        border: 1px dotted #e60b0b;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <section class="left-container">
+        <ul>
+          <li>w3schools-HTML <span></span></li>
+          <li>w3schools-CSS <span></span></li>
+          <li>w3schools-JS<span></span></li>
+          <li>w3schools-PHP<span></span></li>
+        </ul>
+      </section>
+      <section class="right-container">
+        <h1>My first styled page</h1>
+        <div class="welcome-text">
+          <p>Welcome to my styled page!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quod
+            incidunt voluptas laborum aliquid quas vel libero nemo rerum nihil.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+            reiciendis.
+          </p>
+        </div>
+        <div class="bordered-text">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+            exercitationem, necessitatibus voluptates iusto quos maiores.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+            modi sit debitis vel maiores quia!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            perferendis suscipit sequi tempora, nemo blanditiis?
+          </p>
+        </div>
+        <div>
+          <i class="author">Made 25 January 2024 <br />by myself.</i>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
